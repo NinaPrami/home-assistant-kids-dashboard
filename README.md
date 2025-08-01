@@ -9,6 +9,8 @@ Ideal für Familien mit Kindern, die ihr Smart Home sicher & spielerisch nutzen 
 - Optionaler Uhrzeit-Block
 - Responsive Grid-Layout (perfekt für Tablets)
 - Kindersicher: keine Admin-Funktionen
+- 📁 `www/icons/` – Hier kannst du eigene kindgerechte Icons ablegen. Der Ordner wird durch `.gitkeep` erhalten.
+
 
 ## 📸 Vorschau
 
