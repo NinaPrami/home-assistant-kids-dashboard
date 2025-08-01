@@ -1,0 +1,55 @@
+type: custom:grid-layout
+path: kids-dashboard
+layout:
+  grid-template-columns: 1fr 1fr
+  grid-template-rows: auto
+  grid-gap: 16px
+title: Kids Dashboard
+cards:
+  - type: custom:button-card
+    entity: light.kinderzimmer
+    name: Licht
+    icon: mdi:lightbulb
+    tap_action:
+      action: toggle
+    styles:
+      card:
+        - border-radius: 15px
+        - background-color: turquoise
+      name:
+        - font-size: 20px
+  - type: custom:button-card
+    name: Musik
+    icon: mdi:music
+    tap_action:
+      action: call-service
+      service: media_player.play_media
+      data:
+        entity_id: media_player.echo_dot_lea
+        media_content_id: spotify:playlist:37i9dQZF1DXcBWIGoYBM5M
+        media_content_type: music
+    styles:
+      card:
+        - border-radius: 15px
+        - background-color: lightgreen
+      name:
+        - font-size: 20px
+  - type: custom:button-card
+    name: „Mama, komm bitte!“
+    icon: mdi:account-voice
+    tap_action:
+      action: call-service
+      service: tts.cloud_say
+      data:
+        entity_id: media_player.echo_dot_wohnzimmer
+        message: Mama, bitte komm zu mir ins Zimmer.
+    styles:
+      card:
+        - border-radius: 15px
+        - background-color: black
+      name:
+        - font-size: 20px
+  - clock_size: large
+    show_seconds: true
+    type: clock
+    title: Uhrzeit
