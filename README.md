@@ -1,25 +1,44 @@
-# Home Assistant Kids Dashboard 👧🧒📱
+# Home Assistant Kids Dashboard 👧📱
 
-Ein kindgerechtes Tablet-Dashboard für Home Assistant – mit großen Buttons, einfacher Bedienung und kindersicheren Funktionen.
+Ein kinderfreundliches, stilvolles Tablet-Dashboard für Home Assistant.  
+Ideal für Familien mit Kindern, die ihr Smart Home sicher & spielerisch nutzen wollen.
 
-## 🔍 Features
-- Große, bunte Symbole für einfache Steuerung
-- Ideal für Wandtablets oder Fully Kiosk Browser
-- Eingeschränkter Zugriff für Kinder (keine Admin-Karten)
-- Optional mit Text-to-Speech Buttons: „Mama, komm bitte!“
+## ✨ Features
+- Große, farbige Buttons mit Icons
+- Einfache Bedienung für Licht, Musik & TTS („Mama, komm bitte!“)
+- Optionaler Uhrzeit-Block
+- Responsive Grid-Layout (perfekt für Tablets)
+- Kindersicher: keine Admin-Funktionen
 
-## 🖼️ Vorschau
-![Dashboard Vorschau](./screenshots/preview.png)
+## 📸 Vorschau
+
+![Kids Dashboard](./screenshots/preview.png)
+
+## ⚙️ Anforderungen
+
+- Home Assistant (aktuelle Version)
+- [HACS](https://hacs.xyz) installiert
+- Folgende Custom Cards:
+  - [`layout-card`](https://github.com/thomasloven/lovelace-layout-card)
+  - [`button-card`](https://github.com/custom-cards/button-card)
 
 ## 🚀 Installation
-1. Kopiere die Dateien aus dem Ordner `dashboards/` in deine Lovelace-Konfiguration.
-2. Stelle sicher, dass du einen dedizierten Benutzer oder Tablet-Modus nutzt.
-3. Passe die Buttons (z. B. Lichtgruppen oder TTS) an dein Zuhause an.
-4. (Optional) Verwende die `www/icons/` für eigene Symbolik.
 
-## 🧩 Kompatibel mit:
-- Home Assistant (mind. 2024.6)
-- Fully Kiosk, WallPanel oder Home Assistant App (Tablet)
+1. Kopiere den Inhalt von `dashboards/default_view.yaml` in dein Home Assistant Dashboard (YAML-Modus).
+2. Stelle sicher, dass du `layout-card` und `button-card` installiert hast.
+3. Passe die `entity_id`s an deine Geräte an (z. B. Lichter oder Echo-Geräte).
+4. Optional: Passe Farben und Texte nach Belieben an!
 
-## 📣 Feedback & Beiträge
-Pull Requests und Ideen willkommen!
+## 📦 Noch geplant
+
+- Gute-Nacht-Seite mit Szene & Musik
+- Farben nach Tageszeit
+- Zeitbasierte Sperre (z. B. keine Musik nach 21 Uhr)
+
+---
+
+📣 Feedback & Pull Requests willkommen!
+
+---
+
+MIT License © 2025 Nina Pramendorfer
