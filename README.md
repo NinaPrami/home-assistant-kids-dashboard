@@ -47,6 +47,6 @@ Ideal für Familien mit Kindern, die ihr Smart Home sicher & spielerisch nutzen 
 
 Wenn dir das Projekt gefällt, freue ich mich über Unterstützung:
 
-[☕ Buy me a coffee] (buymeacoffee.com/ninaprami)
+[☕ Buy me a coffee](buymeacoffee.com/ninaprami)
 
 MIT License © 2025 Nina Pramendorfer
